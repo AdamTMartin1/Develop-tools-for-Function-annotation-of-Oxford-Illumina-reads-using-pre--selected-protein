@@ -77,13 +77,13 @@ for PA in Path:
                                         
                                         
                                            
-                                        if "Hydrogenotrophic.csv" in largerdictionary.file[x]:
+                                        if ".Hydrogenotrophic.csv" in largerdictionary.file[x]:
                                             colour = "#f6ff00"
-                                        elif "Acetotrophic.csv" in largerdictionary.file[x]:
+                                        if ".Acetotrophic.csv" in largerdictionary.file[x]:
                                             colour = "#0099ff"
-                                        #elif "Methylotrophic.csv." in largerdictionary.file[x]:
-                                           # colour = "#bf00ff"
-                                        elif "Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in largerdictionary.file[x]:
+                                        if ".Methylotrophic.csv." in largerdictionary.file[x]:
+                                            colour = "#bf00ff"
+                                        if ".Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in largerdictionary.file[x]:
                                             colour = "#ff0080"
                                             
                                         ECSplit = largerdictionary.EC[x].replace("C_", "")
@@ -105,13 +105,13 @@ for PA in Path:
                                             if Hundredith < 1:
                                                 Hundredith = 1
                                             print(largerdictionary.file[x])
-                                            if "Hydrogenotrophic.csv" in largerdictionary.file[x]:
+                                            if ".Hydrogenotrophic.csv" in largerdictionary.file[x]:
                                                 colour = "#f6ff00"
-                                            if "Acetotrophic.csv" in largerdictionary.file[x]:
+                                            if ".Acetotrophic.csv" in largerdictionary.file[x]:
                                                 colour = "#0099ff"
-                                            if "Methylotrophic.csv" in largerdictionary.file[x]:
+                                            if ".Methylotrophic.csv." in largerdictionary.file[x]:
                                                 colour = "#bf00ff"
-                                            if "Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in largerdictionary.file[x]:
+                                            if ".Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in largerdictionary.file[x]:
                                                 colour = "#ff0080"
                                                 
                                             ECSplit = largerdictionary.EC[x].replace("C_", "")
@@ -143,14 +143,14 @@ for PA in Path:
                     if Hundredith < 1:
                         Hundredith = 1
                     
-                    if "Hydrogenotrophic.csv" in EnviromentOutput.file[x]:
+                    if ".Hydrogenotrophic.csv" in largerdictionary.file[x]:
                         colour = "#f6ff00"
-                    if "Acetotrophic.csv" in EnviromentOutput.file[x]:
+                    if ".Acetotrophic.csv" in largerdictionary.file[x]:
                         colour = "#0099ff"
-                    if "Methylotrophic.csv" in EnviromentOutput.file[x]:
-                        colour = "#ff0080"
-                    if "Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in EnviromentOutput.file[x]:
+                    if ".Methylotrophic.csv." in largerdictionary.file[x]:
                         colour = "#bf00ff"
+                    if ".Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in largerdictionary.file[x]:
+                        colour = "#ff0080"
                         
                     ECSplit = EnviromentOutput.EC[x].replace("C_", "")
                     f.write(ECSplit)
@@ -186,13 +186,13 @@ for x in filenames:
                     if Hundredith < 1:
                         Hundredith = 1
                         
-                    if "Hydrogenotrophic.csv" in largerdictionary.file[y]:
+                    if ".Hydrogenotrophic.csv" in largerdictionary.file[x]:
                         colour = "#f6ff00"
-                    elif "Acetotrophic.csv" in largerdictionary.file[y]:
+                    if ".Acetotrophic.csv" in largerdictionary.file[x]:
                         colour = "#0099ff"
-                    elif "Methylotrophic.csv" in largerdictionary.file[y]:
+                    if ".Methylotrophic.csv." in largerdictionary.file[x]:
                         colour = "#bf00ff"
-                    elif "Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in largerdictionary.file[y]:
+                    if ".Hydrogenotrophic_Acetotrophic_Methylotrophic.csv" in largerdictionary.file[x]:
                         colour = "#ff0080"
                         
                     ECSplit = largerdictionary.EC[y].replace("C_", "")
