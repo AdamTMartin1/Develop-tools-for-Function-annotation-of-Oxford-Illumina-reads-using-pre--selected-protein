@@ -61,7 +61,7 @@ for PA in Path:
                                 dictionary=pd.DataFrame(columns=['Name1','Name2','Length','Accession', 'Evalue', 'Bitscore','Bits'])
                                 
 
-                                if 'Acetotrophic.csv' in file.name  or 'Hydrogenotrophic.csv' in file.name or 'Methylotrophic.csv' in file.name or 'Hydrogenotrophic_Acetotrophic_Methylotrophic.csv' in file.name:
+                                if '.Acetotrophic.csv' in file.name  or '.Hydrogenotrophic.csv' in file.name or '.Methylotrophic.csv' in file.name or '.Hydrogenotrophic_Acetotrophic_Methylotrophic.csv' in file.name:
                                     print(file.name)
                                     dictionary = pd.read_csv(path3)
         
