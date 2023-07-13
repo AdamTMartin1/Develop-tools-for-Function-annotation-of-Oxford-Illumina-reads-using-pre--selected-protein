@@ -51,7 +51,7 @@ for PA in Path:
                         path3="{}{}".format(path2, file.name) 
                         
                         dictionary=pd.DataFrame(columns=[ 'EC', 'ECcount'])
-                        if 'Acetotrophic.csv' in file.name  or 'Hydrogenotrophic.csv' in file.name or 'Methylotrophic.csv' in file.name or 'Hydrogenotrophic_Acetotrophic_Methylotrophic.csv' in file.name:
+                        if '.Acetotrophic.csv' in file.name  or '.Hydrogenotrophic.csv' in file.name or '.Methylotrophic.csv' in file.name or '.Hydrogenotrophic_Acetotrophic_Methylotrophic.csv' in file.name:
                             
                             with open(path3, 'r') as f:
                                 data = f.readlines()
