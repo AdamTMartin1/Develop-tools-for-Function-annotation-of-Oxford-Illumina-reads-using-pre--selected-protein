@@ -35,13 +35,13 @@ with open(INPUT, 'r') as f:
             print(SplitLine)
             if SplitLine[1] != "Total":
                 Full.loc[len(Full.index)] = SplitLine[0], SplitLine[1], SplitLine[2],SplitLine[3]
-                if 'Acetotrophic' in SplitLine[0]:
+                if '.Acetotrophic.csv' in SplitLine[0]:
                     Acetotrophic.loc[len(Full.index)] = SplitLine[0], SplitLine[1], SplitLine[2],SplitLine[3]
-                if 'Methylotrophic' in SplitLine[0]:
+                if '.Methylotrophic.csv' in SplitLine[0]:
                     Methylotrophic.loc[len(Full.index)] = SplitLine[0], SplitLine[1], SplitLine[2],SplitLine[3]
-                if 'Hydrogenotrophic' in SplitLine[0]:
+                if '.Hydrogenotrophic.csv' in SplitLine[0]:
                     Hydrogenotrophic.loc[len(Full.index)] = SplitLine[0], SplitLine[1], SplitLine[2],SplitLine[3]
-                if 'Hydrogenotrophic_Acetotrophic_Methylotrophic' in SplitLine[0]:
+                if '.Hydrogenotrophic_Acetotrophic_Methylotrophic.csv' in SplitLine[0]:
                     Hydrogenotrophic_Acetotrophic_Methylotrophic.loc[len(Full.index)] = SplitLine[0], SplitLine[1], SplitLine[2],SplitLine[3]
         
         
