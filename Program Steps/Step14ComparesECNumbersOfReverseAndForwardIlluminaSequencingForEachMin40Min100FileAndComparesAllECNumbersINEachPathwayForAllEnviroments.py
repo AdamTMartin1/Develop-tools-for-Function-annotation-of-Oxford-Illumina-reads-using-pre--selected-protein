@@ -75,7 +75,7 @@ for PA in Path:
                                         ACEFILL="True"
                                         
                                     
-                        if 'Hydrogenotrophic.csv' in file.name :
+                        if '.Hydrogenotrophic.csv' in file.name :
                             with open(path3, 'r') as f:
                                 data = f.readlines()
                                 for x in range(len(data)):
@@ -88,7 +88,7 @@ for PA in Path:
                                         Hydrogenotrophic.loc[len(Hydrogenotrophic.index)] = file.name, pathway, ACE, EC, ECcount
                                         HYDFILL="True"
                         
-                        if 'Methylotrophic.csv' in file.name :
+                        if '.Methylotrophic.csv' in file.name :
                             with open(path3, 'r') as f:
                                 data = f.readlines()
                                 for x in range(len(data)):
@@ -100,7 +100,7 @@ for PA in Path:
                                         Methylotrophic.loc[len(Methylotrophic.index)] = file.name, pathway, ACE, EC, ECcount
                                         METHFILL="True"
                                     
-                        if 'Hydrogenotrophic_Acetotrophic_Methylotrophic.csv' in file.name :
+                        if '.Hydrogenotrophic_Acetotrophic_Methylotrophic.csv' in file.name :
                             with open(path3, 'r') as f:
                                 
                                 data = f.readlines()
